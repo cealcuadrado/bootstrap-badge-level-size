@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  level = 1;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getLevel(): string {
+    return `level-${this.level}`;
   }
 
 }

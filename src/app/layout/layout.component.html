@@ -1,1 +1,16 @@
-<p>layout works!</p>
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="form-group">
+      <label>Nivel</label>
+      <input type="range" class="form-control" [(ngModel)]="level" min="1" max="3" step="1"/>
+    </div>
+  </div>
+</div>
+<hr>
+<div [ngClass]="getLevel()">
+  <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+  <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+  <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+  <p>Example paragraph <span class="badge badge-secondary">New</span></p>
+</div>
+
